@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Linkedin, Twitter, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logoTransparent from '@/assets/EUDLOGObianco.png';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -34,13 +35,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">EU</span>
-              </div>
-              <span className="text-xl font-bold">
-                EndUser <span className="text-accent">Digital</span>
-              </span>
+            <div className="flex items-center space-x-3">
+              <img
+                src={logoTransparent}
+                alt="EndUser Digital"
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               La business unit del gruppo EndUser Italia dedicata alla trasformazione 
