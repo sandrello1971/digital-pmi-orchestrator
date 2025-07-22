@@ -19,7 +19,7 @@ const Home = () => {
             type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 hero-overlay"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       {/* Content */}
@@ -38,10 +38,23 @@ const Home = () => {
             </span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-16 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Trasforma la tua PMI con l'Intelligenza Artificiale
-          </p>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <Link to="/servizi">
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
+                Inizia la Trasformazione
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-white/30 text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg backdrop-blur-sm group"
+            >
+              <Play className="mr-2 h-5 w-5" />
+              Guarda Demo
+            </Button>
+          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -66,24 +79,6 @@ const Home = () => {
               <div className="text-3xl font-bold mb-2">8.2%</div>
               <div className="text-sm text-gray-300">PMI che adottano AI oggi</div>
             </div>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Link to="/servizi">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
-                Inizia la Trasformazione
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white/30 text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg backdrop-blur-sm group"
-            >
-              <Play className="mr-2 h-5 w-5" />
-              Guarda Demo
-            </Button>
           </div>
 
           {/* Value Proposition */}
