@@ -1,7 +1,8 @@
 import { ArrowRight, Play, Users, Target, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
-const HeroSection = () => {
+const Home = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
@@ -32,7 +33,7 @@ const HeroSection = () => {
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Trasforma la tua PMI con l'
-            <span className="bg-gradient-to-r from-blue-300 to-green-300 bg-clip-text text-transparent">
+            <span className="gradient-text">
               Intelligenza Artificiale
             </span>
           </h1>
@@ -47,7 +48,7 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="flex items-center justify-center mb-3">
-                <Users className="w-8 h-8 text-blue-300" />
+                <Users className="w-8 h-8 text-green-300" />
               </div>
               <div className="text-3xl font-bold mb-2">50.000+</div>
               <div className="text-sm text-gray-300">PMI Target in Italia</div>
@@ -61,7 +62,7 @@ const HeroSection = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="flex items-center justify-center mb-3">
-                <TrendingUp className="w-8 h-8 text-blue-300" />
+                <TrendingUp className="w-8 h-8 text-green-300" />
               </div>
               <div className="text-3xl font-bold mb-2">8.2%</div>
               <div className="text-sm text-gray-300">PMI che adottano AI oggi</div>
@@ -70,28 +71,20 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
-              Inizia la Trasformazione
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link to="/servizi">
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
+                Inizia la Trasformazione
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-lg backdrop-blur-sm group"
+              className="border-white/30 text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg backdrop-blur-sm group"
             >
               <Play className="mr-2 h-5 w-5" />
               Guarda Demo
             </Button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-12 pt-8 border-t border-white/20">
-            <p className="text-sm text-gray-300 mb-4">Trusted by</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 opacity-70">
-              <span className="text-lg font-semibold">EndUser Italia</span>
-              <span className="text-lg font-semibold">PNRR Partner</span>
-              <span className="text-lg font-semibold">CNA Collaborator</span>
-            </div>
           </div>
         </div>
       </div>
@@ -99,4 +92,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Home;
