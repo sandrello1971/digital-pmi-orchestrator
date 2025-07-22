@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import enduserLogo from '@/assets/enduser-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/src/assets/enduser-logo.png" alt="EndUser Digital" className="h-10 w-auto" />
+            <img src={enduserLogo} alt="EndUser Digital" className="h-10 w-auto" />
             <span className="text-xl font-bold text-white">
               EndUser <span className="text-accent">Digital</span>
             </span>
