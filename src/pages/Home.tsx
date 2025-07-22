@@ -39,7 +39,7 @@ const Home = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
             L'unico partner che unisce tecnologia AI proprietaria, expertise in finanza agevolata 
             e metodologia validata per trasformare le PMI in aziende digitalmente native
           </p>
