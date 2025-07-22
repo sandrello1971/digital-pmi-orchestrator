@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-mport logoTransparent from '@/assets/EndUser Digital bianco.pn
+import logoTransparent from '@/assets/enduser-logo-transparent.png';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
