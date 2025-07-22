@@ -24,8 +24,12 @@ const Header = () => {
             <img
   src={logoTransparent}
   alt="EndUser Digital"
-  className="h-20 w-auto drop-shadow-lg !p-0"  // Il !p-0 override il padding
-  style={{ imageRendering: 'auto' }}
+  className="h-20 w-auto drop-shadow-lg"
+  style={{ 
+    imageRendering: 'auto',
+    padding: '0',
+    background: 'transparent'
+  }}
 />
 
           </Link>
