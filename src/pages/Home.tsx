@@ -39,9 +39,8 @@ const Home = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            L'unico partner che unisce tecnologia AI proprietaria, expertise in finanza agevolata 
-            e metodologia validata per trasformare le PMI in aziende digitalmente native
+          <p className="text-xl md:text-2xl mb-16 text-white/90 max-w-3xl mx-auto leading-relaxed">
+            Trasforma la tua PMI con l'Intelligenza Artificiale
           </p>
 
           {/* Stats */}
@@ -70,7 +69,7 @@ const Home = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Link to="/servizi">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
                 Inizia la Trasformazione
@@ -85,6 +84,14 @@ const Home = () => {
               <Play className="mr-2 h-5 w-5" />
               Guarda Demo
             </Button>
+          </div>
+
+          {/* Value Proposition */}
+          <div className="text-center mb-8">
+            <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+              L'unico partner che unisce tecnologia AI proprietaria, expertise in finanza agevolata 
+              e metodologia validata per trasformare le PMI in aziende digitalmente native
+            </p>
           </div>
         </div>
       </div>

@@ -30,7 +30,6 @@ const Servizi = () => {
               </div>
               
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Starter</h3>
-              <div className="text-3xl font-bold mb-2 text-foreground">€3.000 - €5.000</div>
               <div className="text-sm text-muted-foreground mb-6">4-6 settimane</div>
               
               <p className="text-muted-foreground mb-6">
@@ -81,7 +80,6 @@ const Servizi = () => {
               </div>
               
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Pilot</h3>
-              <div className="text-3xl font-bold mb-2 text-foreground">€15.000 - €25.000</div>
               <div className="text-sm text-muted-foreground mb-6">5-6 mesi</div>
               
               <p className="text-muted-foreground mb-6">
@@ -130,7 +128,6 @@ const Servizi = () => {
               </div>
               
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Partner</h3>
-              <div className="text-3xl font-bold mb-2 text-foreground">€24.000 - €120.000</div>
               <div className="text-sm text-muted-foreground mb-6">12 mesi</div>
               
               <p className="text-muted-foreground mb-6">

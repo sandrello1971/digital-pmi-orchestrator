@@ -19,10 +19,8 @@ const Header = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">EU</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src="/src/assets/enduser-logo.png" alt="EndUser Digital" className="h-10 w-auto" />
             <span className="text-xl font-bold text-white">
               EndUser <span className="text-accent">Digital</span>
             </span>
