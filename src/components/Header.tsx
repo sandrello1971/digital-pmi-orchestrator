@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-const logoWhite = '/lovable-uploads/7fdded33-cbc9-4f86-9141-8e3d77b56c5d.png';
+import logoTransparent from '@/assets/enduser-logo-transparent.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-  src={logoWhite}
+  src={logoTransparent}
   alt="EndUser Digital"
   className="h-20 w-auto drop-shadow-lg"
   style={{ imageRendering: 'auto' }}
