@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex flex-col overflow-hidden">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <video
@@ -24,46 +24,63 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 section-container text-center text-white pt-20">
-          <div className="max-w-4xl mx-auto">
-            {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
-              <span className="text-sm font-medium">🚀 Leader nella Trasformazione Digitale PMI</span>
-            </div>
+        {/* Top Content - Over Video */}
+        <div className="relative z-10 flex-1 flex items-center justify-center">
+          <div className="section-container text-center text-white">
+            <div className="max-w-4xl mx-auto">
+              {/* Badge */}
+              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
+                <span className="text-sm font-medium">🚀 Leader nella Trasformazione Digitale PMI</span>
+              </div>
 
-            {/* Main Headline */}
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
-              Trasforma la tua PMI con l'
-              <span className="gradient-text">
-                Intelligenza Artificiale
-              </span>
-            </h1>
+              {/* Main Headline */}
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+                Trasforma la tua PMI con l'
+                <span className="gradient-text">
+                  Intelligenza Artificiale
+                </span>
+              </h1>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+              {/* Single CTA Button */}
               <Link to="/servizi">
                 <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
                   Inizia la Trasformazione
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-white/30 text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg backdrop-blur-sm group"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                Guarda Demo
-              </Button>
             </div>
+          </div>
+        </div>
 
-            {/* Value Proposition */}
-            <div className="text-center">
-              <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-                L'unico partner che unisce tecnologia AI proprietaria, expertise in finanza agevolata e metodologia 
-                validata per trasformare le PMI in aziende digitalmente native
-              </p>
+        {/* Bottom Content - Just Below Video */}
+        <div className="relative z-10 bg-black/50 backdrop-blur-sm py-12">
+          <div className="section-container text-center text-white">
+            <div className="max-w-4xl mx-auto">
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+                <Link to="/servizi">
+                  <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
+                    Inizia la Trasformazione
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-white/30 text-white hover:bg-white/10 hover:text-white px-8 py-4 text-lg font-semibold rounded-lg backdrop-blur-sm group"
+                >
+                  <Play className="mr-2 h-5 w-5" />
+                  Guarda Demo
+                </Button>
+              </div>
+
+              {/* Value Proposition */}
+              <div className="text-center">
+                <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+                  L'unico partner che unisce tecnologia AI proprietaria, expertise in finanza agevolata e metodologia 
+                  validata per trasformare le PMI in aziende digitalmente native
+                </p>
+              </div>
             </div>
           </div>
         </div>
