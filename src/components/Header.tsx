@@ -21,7 +21,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logoWhite} alt="EndUser Digital" className="h-12 w-auto" />
+            <img
+  src={logoWhite}
+  alt="EndUser Digital"
+  className="h-20 w-auto drop-shadow-lg"
+  style={{ imageRendering: 'auto' }}
+/>
+
           </Link>
 
           {/* Desktop Navigation */}
