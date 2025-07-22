@@ -25,15 +25,15 @@ const Home = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 section-container text-center text-white">
+        <div className="relative z-10 section-container text-center text-white pt-20">
           <div className="max-w-4xl mx-auto">
             {/* Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8">
+            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
               <span className="text-sm font-medium">🚀 Leader nella Trasformazione Digitale PMI</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
               Trasforma la tua PMI con l'
               <span className="gradient-text">
                 Intelligenza Artificiale
@@ -41,7 +41,7 @@ const Home = () => {
             </h1>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <Link to="/servizi">
                 <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
                   Inizia la Trasformazione
@@ -59,7 +59,7 @@ const Home = () => {
             </div>
 
             {/* Value Proposition */}
-            <div className="text-center mb-16">
+            <div className="text-center">
               <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
                 L'unico partner che unisce tecnologia AI proprietaria, expertise in finanza agevolata e metodologia 
                 validata per trasformare le PMI in aziende digitalmente native
