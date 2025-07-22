@@ -40,14 +40,6 @@ const Home = () => {
                   Intelligenza Artificiale
                 </span>
               </h1>
-
-              {/* Single CTA Button */}
-              <Link to="/servizi">
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg font-semibold rounded-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 group">
-                  Inizia la Trasformazione
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
@@ -77,7 +69,7 @@ const Home = () => {
               {/* Value Proposition */}
               <div className="text-center">
                 <p className="text-lg md:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-                  L'unico partner che unisce tecnologia AI proprietaria, expertise in finanza agevolata e metodologia 
+                  L'unico partner che unisce tecnologia AI, expertise in finanza agevolata e metodologia 
                   validata per trasformare le PMI in aziende digitalmente native
                 </p>
               </div>
