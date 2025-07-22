@@ -1,6 +1,15 @@
+import SEOHead from '@/components/SEOHead';
+
 const Cookie = () => {
   return (
-    <div className="pt-20 pb-16 bg-background">
+    <>
+      <SEOHead
+        title="Cookie Policy - Gestione Cookie EndUser Digital"
+        description="Cookie Policy EndUser Digital: tipologie cookie utilizzati, gestione preferenze, opt-out. Informazioni complete su cookie tecnici, analitici e marketing."
+        keywords="cookie policy EndUser Digital, gestione cookie, cookie tecnici, cookie analitici, preferenze privacy"
+        canonicalUrl="/cookie"
+      />
+      <div className="pt-20 pb-16 bg-background">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-foreground">Cookie Policy</h1>
@@ -114,7 +123,8 @@ const Cookie = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

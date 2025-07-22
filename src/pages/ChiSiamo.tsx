@@ -1,8 +1,16 @@
 import { Users, Target, TrendingUp, Shield, BookOpen, Lightbulb } from 'lucide-react';
+import SEOHead from '@/components/SEOHead';
 
 const ChiSiamo = () => {
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <>
+      <SEOHead
+        title="Chi Siamo - Gruppo EndUser Italia per la Trasformazione Digitale"
+        description="EndUser Digital, business unit del Gruppo EndUser Italia specializzata in AI e trasformazione digitale per PMI. Educazione, etica e innovazione al servizio delle aziende."
+        keywords="EndUser Digital, Gruppo EndUser Italia, trasformazione digitale PMI, consulenza AI, educazione intelligenza artificiale, etica AI"
+        canonicalUrl="/chi-siamo"
+      />
+      <div className="min-h-screen bg-background pt-20">
       {/* Hero Section */}
       <section className="section-container py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -138,7 +146,8 @@ const ChiSiamo = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

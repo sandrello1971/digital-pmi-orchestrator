@@ -1,10 +1,50 @@
 import { ArrowRight, Play, Users, Target, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import SEOHead from '@/components/SEOHead';
 
 const Home = () => {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EndUser Digital",
+    "description": "Trasformazione digitale e AI per PMI italiane",
+    "url": "https://enduser-digital.com",
+    "sameAs": ["https://www.linkedin.com/company/enduser-digital"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Milano",
+      "addressCountry": "IT"
+    },
+    "offers": [
+      {
+        "@type": "Service",
+        "name": "AI Starter",
+        "description": "Audit digitale e roadmap AI per PMI"
+      },
+      {
+        "@type": "Service", 
+        "name": "AI Pilot",
+        "description": "Implementazione progetti pilota AI"
+      },
+      {
+        "@type": "Service",
+        "name": "AI Partner", 
+        "description": "Partnership strategica per trasformazione digitale completa"
+      }
+    ]
+  };
+
   return (
-    <div>
+    <>
+      <SEOHead
+        title="Trasformazione AI per PMI Italiane - Leader nella Digitalizzazione"
+        description="Trasforma la tua PMI con intelligenza artificiale e incentivi Transizione 5.0. Metodologia proprietaria, 45% credito d'imposta. Inizia oggi la rivoluzione digitale."
+        keywords="trasformazione digitale PMI, intelligenza artificiale piccole medie imprese, AI per PMI, incentivi Transizione 5.0, digitalizzazione aziende italiane"
+        canonicalUrl="/"
+        structuredData={organizationSchema}
+      />
+      <div>
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col overflow-hidden">
         {/* Video Background */}
@@ -112,7 +152,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

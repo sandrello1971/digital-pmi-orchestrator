@@ -1,10 +1,18 @@
 import { Euro, TrendingUp, FileCheck, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import SEOHead from '@/components/SEOHead';
 
 const Incentivi = () => {
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <>
+      <SEOHead
+        title="Incentivi Digitalizzazione 2025 - Transizione 5.0, PID-NEXT, PNRR per PMI"
+        description="Guida completa incentivi 2025 per PMI: Transizione 5.0 (45% credito), PID-NEXT (100%), Nuova Sabatini. Ti aiutiamo ad accedere ai fondi per la digitalizzazione."
+        keywords="incentivi digitalizzazione 2025, Transizione 5.0 credito imposta, PID-NEXT PMI, Nuova Sabatini, PNRR digitalizzazione, bandi finanza agevolata"
+        canonicalUrl="/incentivi"
+      />
+      <div className="min-h-screen bg-background pt-20">
       {/* Hero Section */}
       <section className="section-container py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -203,7 +211,8 @@ const Incentivi = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

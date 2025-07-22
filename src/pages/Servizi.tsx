@@ -1,10 +1,62 @@
 import { Check, ArrowRight, Zap, Target, Rocket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import SEOHead from '@/components/SEOHead';
 
 const Servizi = () => {
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "position": 1,
+        "name": "AI Starter",
+        "description": "Audit completo PMI e roadmap trasformazione digitale",
+        "provider": "EndUser Digital",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "3000-5000"
+        }
+      },
+      {
+        "@type": "Service",
+        "position": 2,
+        "name": "AI Pilot",
+        "description": "Implementazione progetti pilota AI e integrazione sistemi",
+        "provider": "EndUser Digital",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "15000-25000"
+        }
+      },
+      {
+        "@type": "Service",
+        "position": 3,
+        "name": "AI Partner",
+        "description": "Partnership strategica per trasformazione digitale completa",
+        "provider": "EndUser Digital",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "24000-120000"
+        }
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <>
+      <SEOHead
+        title="Servizi AI per PMI - AI Starter, Pilot e Partner | Prezzi e Dettagli"
+        description="Scopri i 3 pacchetti per digitalizzare la tua PMI: AI Starter (€3-5k), AI Pilot (€15-25k), AI Partner (€24-120k). Include incentivi Transizione 5.0 al 45%."
+        keywords="servizi AI PMI, pacchetti digitalizzazione, AI Starter, AI Pilot, AI Partner, prezzi trasformazione digitale, consulenza intelligenza artificiale"
+        canonicalUrl="/servizi"
+        structuredData={servicesSchema}
+      />
+      <div className="min-h-screen bg-background pt-20">
       {/* Hero Section */}
       <section className="section-container py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -185,7 +237,8 @@ const Servizi = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

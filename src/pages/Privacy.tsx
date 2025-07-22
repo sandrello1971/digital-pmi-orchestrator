@@ -1,6 +1,15 @@
+import SEOHead from '@/components/SEOHead';
+
 const Privacy = () => {
   return (
-    <div className="pt-20 pb-16 bg-background">
+    <>
+      <SEOHead
+        title="Privacy Policy - Protezione Dati EndUser Digital"
+        description="Privacy Policy di EndUser Digital: come trattiamo i tuoi dati personali, finalità, diritti dell'interessato. Conformità GDPR per servizi di trasformazione digitale."
+        keywords="privacy policy EndUser Digital, GDPR, protezione dati, trattamento dati personali, diritti interessato"
+        canonicalUrl="/privacy"
+      />
+      <div className="pt-20 pb-16 bg-background">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-foreground">Privacy Policy</h1>
@@ -89,7 +98,8 @@ const Privacy = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 

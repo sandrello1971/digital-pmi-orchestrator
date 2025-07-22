@@ -3,10 +3,39 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import SEOHead from '@/components/SEOHead';
 
 const Contatti = () => {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EndUser Digital",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+39-02-1234-5678",
+      "contactType": "customer service",
+      "email": "info@enduser-digital.com",
+      "availableLanguage": "Italian"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via dell'Innovazione, 42",
+      "addressLocality": "Milano",
+      "postalCode": "20123",
+      "addressCountry": "IT"
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <>
+      <SEOHead
+        title="Contatti - Richiedi Consulenza Gratuita per Trasformazione Digitale PMI"
+        description="Contatta EndUser Digital per consulenza gratuita su AI e digitalizzazione PMI. Assessment gratuito, analisi incentivi. Risposta in 24h. Milano +39 02 1234 5678."
+        keywords="contatti EndUser Digital, consulenza gratuita PMI, assessment digitale gratuito, contatti trasformazione digitale, Milano consulenza AI"
+        canonicalUrl="/contatti"
+        structuredData={contactSchema}
+      />
+      <div className="min-h-screen bg-background pt-20">
       {/* Hero Section */}
       <section className="section-container py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -195,7 +224,8 @@ const Contatti = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

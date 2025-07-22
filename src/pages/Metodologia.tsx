@@ -1,10 +1,18 @@
 import { CheckCircle, ArrowRight, Wifi, Users, BarChart, Lightbulb } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import SEOHead from '@/components/SEOHead';
 
 const Metodologia = () => {
   return (
-    <div className="min-h-screen bg-background pt-20">
+    <>
+      <SEOHead
+        title="Metodologia Digital Readiness 360° - Trasformazione Digitale PMI Strutturata"
+        description="Metodologia proprietaria in 5 fasi per digitalizzazione PMI: Assessment, Incentivi, Implementation Agile, Training, Miglioramento Continuo. Risultati garantiti."
+        keywords="metodologia trasformazione digitale, Digital Readiness 360, assessment digitale PMI, implementazione agile AI, audit competenze digitali"
+        canonicalUrl="/metodologia"
+      />
+      <div className="min-h-screen bg-background pt-20">
       {/* Hero Section */}
       <section className="section-container py-20">
         <div className="max-w-4xl mx-auto text-center">
@@ -230,7 +238,8 @@ const Metodologia = () => {
           </Link>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
