@@ -25,7 +25,7 @@ const Home = () => {
         </div>
 
         {/* Top Content - Over Video */}
-        <div className="relative z-10 flex-1 flex items-center justify-center pt-5">
+        <div className="relative z-10 flex-1 flex items-center justify-center pt-2">
           <div className="section-container text-center text-white">
             <div className="max-w-4xl mx-auto">
               {/* Badge */}
