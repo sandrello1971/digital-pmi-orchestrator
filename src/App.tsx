@@ -15,6 +15,10 @@ import Incentivi from "./pages/Incentivi";
 import Contatti from "./pages/Contatti";
 import Privacy from "./pages/Privacy";
 import Cookie from "./pages/Cookie";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import AdminLogin from "./pages/AdminLogin";
+import AdminBlog from "./pages/AdminBlog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +40,10 @@ const App = () => (
               <Route path="/metodologia" element={<Metodologia />} />
               <Route path="/incentivi" element={<Incentivi />} />
               <Route path="/contatti" element={<Contatti />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:id" element={<BlogPost />} />
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin/blog" element={<AdminBlog />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/cookie" element={<Cookie />} />
               <Route path="*" element={<NotFound />} />
